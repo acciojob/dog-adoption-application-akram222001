@@ -4,40 +4,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name">
- 
-        <br>
- 
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" placeholder="Phone Number">
- 
-        <br>
- 
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Address">
- 
-        <br>
- 
-        <label>Have you ever lived with a Dog before?</label>
-        <br>
-        <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
-        <label for="checkbox"> Have you ever lived with a Dog before?</label>
-        <br>
- 
-        <label for="multiSelect">Please select your preferred breeds:</label>
-        <select multiple="true" id="multiSelect">
-            <option value="">Make this as a multi-select box with at least 3 options</option>
-            <option value="java">java</option>
-            <option value="javaScript">javaScript</option>
-            <option value="python">python</option>
-        </select>
- 
-        <br>
- 
-        <button type="submit" id="submit" value="submit">Submit</button>
-    </form>
+   <div class="container">
+        <h2>Dog Adoption Application</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <label for="haveDog">Have you ever lived with a Dog before?</label>
+                <input type="checkbox" id="haveDog" name="haveDog" value="Have you ever lived with a Dog before?">
+            </div>
+            <div class="form-group">
+                <label for="preferredBreeds">Please select your preferred breeds:</label>
+                <select id="preferredBreeds" name="preferredBreeds" multiple>
+                    <option value="java">Java</option>
+                    <option value="javaScript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="cSharp">C#</option>
+                    <option value="swift">Swift</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
